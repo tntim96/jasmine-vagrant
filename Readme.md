@@ -9,7 +9,7 @@ Download [debian80.box](https://downloads.sourceforge.net/project/vagrantboxjess
 git clone https://github.com/joyent/node.git
 cd node
 git checkout v0.10.28
- ./configure --openssl-libpath=/usr/lib/ssl
+./configure --openssl-libpath=/usr/lib/ssl
 make
 #make test
 sudo make install
@@ -21,13 +21,15 @@ sudo npm install -g grunt-cli
 
 # Install Ruby
 (plus extras will take some time)
+
 `curl -L https://get.rvm.io | bash -s stable --rails`
 
 # Checkout Jasmine (if not using mapped drive)
 ```Bash
 git clone https://github.com/pivotal/jasmine.git
 cd jasmine
-bundle
+npm install --local
+bundle install
 ```
 
 # Run Tests
