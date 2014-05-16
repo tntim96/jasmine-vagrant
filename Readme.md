@@ -20,12 +20,15 @@ sudo npm install -g grunt-cli
 
 
 # Install Ruby
-(plus extras will take some time)
+(plus extras - will take some time)
 
 `curl -L https://get.rvm.io | bash -s stable --rails`
 
-# Checkout Jasmine (if not using mapped drive)
+# Checkout Jasmine
+(if not using mapped drive)
+
 ```Bash
+cd
 git clone https://github.com/pivotal/jasmine.git
 cd jasmine
 npm install --local
