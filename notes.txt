@@ -1,0 +1,26 @@
+#Debian box from http://www.vagrantbox.es/
+#https://downloads.sourceforge.net/project/vagrantboxjessie/debian80.box
+
+#Install dependency packages
+sudo apt-get update && sudo apt-get install git-core curl build-essential openssl libssl-dev
+
+#Node
+git clone https://github.com/joyent/node.git
+cd node
+git checkout v0.10.28
+ 
+./configure --openssl-libpath=/usr/lib/ssl
+make
+#make test
+sudo make install
+node -v
+npm -v
+sudo npm install -g grunt-cli
+
+grunt execSpecsInNode
+
+#Ruby
+curl -L https://get.rvm.io | bash -s stable --rails
+
+bundle
+bundle exec rake jasmine
