@@ -26,7 +26,7 @@ sudo npm install -g grunt-cli
 
 ...can probably replace with the shorter
 
-`sudo apt-get insatll ruby-dev`
+`sudo apt-get install ruby-dev`
 
 `sudo gem install bundler`
 
